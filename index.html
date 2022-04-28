@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      @page { size:landscape; }
+    </style>
+    <link rel="icon" href="Img/icon.png">
+    <meta charset="utf-8">
+    <title>The Astray</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleHandy.css ">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!--Header----------------------------------------------------->
+
+    <header>
+      <div id="menu">
+        <ul>
+          <li class="topmenu">
+              <a href="#home"><img src="Img/logo.png" alt="Logo.png"></a>
+              <ul>
+                  <li class="submenu"><a href="https://instagram.com/theastrayofficial" target="_blank">Instagram</a></li>
+                  <li class="submenu"><a href="https://www.youtube.com/channel/UC-ACxX8AidsZJ-PPj2jZMeA" target="_blank">YouTube</a></li>
+                  <li class="submenu"><a href="https://discord.gg/A4arKBWVXF" target="_blank">Discord</a></li>
+              </ul>
+          </li>
+          </ul>
+      </div>
+
+      <nav id="main-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Songs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <!--Home----------------------------------------------------->
+
+    <script> 
+      function isMobile(){
+        return navigator.userAgent.match(/(iPhone|iPod|iPad|blackberry|android|Kindle|htc|lg|midp|mmp|mobile|nokia|opera mini|palm|pocket|psp|sgh|smartphone|symbian|treo mini|SonyEricsson|Samsung|MobileExplorer|PalmSource|Benq|Windows Phone|Windows Mobile|IEMobile|Windows CE)/i);
+      }
+      if(isMobile()){
+        alert("Please use a device with a 16:9 display or turn your device!");
+      }
+    </script>  
+
+    <div class="container">
+      <section id="home">
+        <hr>
+          <h2>THE ASTRAY</h2>
+          <hr id="strich">
+          <h1>A MOONLIGHT NIGHT</h1>
+          <a href="#about">
+            <h4 class="pfeil">▼</h4>
+          </a>
+          <hr id="shadow">
+      </section>
+
+      <!--About----------------------------------------------------->
+      <section id="about">
+        <br>
+        <h3>About the Album</h3>
+        <hr>
+        <img src="Img/avatar.png" alt="Cover.png">
+        <h4>A MOONLIGHTNIGHT</h4>
+        <p>
+          The album resembles drifting away into sleep and every song is a different dream. Its about sleeping at the edge of dreams and nightmares between melancolic romanticism, reflecting the past and the tales of the dark.
+          With songs that capture the emotional depths of falling in love, trying to stand up after getting thrown to the ground and learning from lessons of the past. <br>
+          <br>
+        </p>
+        <a href="#projects">
+          <p class="pfeil">▼</p>
+        </a>
+      </section>
+
+      <!--Songs----------------------------------------------------->
+
+      <section id="projects">
+        <br>
+        <h3>Songs</h3>
+        <hr>
+
+        <div id="songs">
+          <ul>
+            <li><a href="#song_01" onclick=playmln()><img src="songs/moonlightnight/moonlightnight.png" alt="Song_01.png"></a></li>
+            <li><a href="#song_02" onclick=playwto()><img src="songs/welcometothejungle/welcometothejungle.png" alt="Song_02.png"></a></li>
+            <li><a href="#song_03" onclick=playml()><img src="songs/molotovlove/molotovlove.png" alt="Song_03.png"></a></li>
+            <li><a href="#song_04" onclick=playey()><img src="songs/emeraldeyes/emeraldeyes.png" alt="Song_04.png"></a></li>
+            <li><a href="#song_05" onclick=playi()><img src="songs/incredible/incredible.png" alt="Song_05.png"></a></li>
+            <li><a href="#song_06" onclick=playnp()><img src="songs/neonpink/neonpink.png" alt="Song_06.png"></a></li>
+            <li><a href="#song_07" onclick=playsi()><img src="songs/sleepingissues/sleepingissues.png" alt="Song_07.png"></a></li>
+            <li><a href="#song_08" onclick=playmot()><img src="songs/madeoftears/madeoftears.png" alt="Song_08.png"></a></li>
+            <li><a href="#song_09" onclick=playclt()><img src="songs/crookedlittletrees/crookedlittletrees.png" alt="Song_09.png"></a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!------------------------------playTeaser-->
+
+      <script type="text/javascript"> 
+          
+          var action = false;
+          var songs = [];
+
+          function playwto() {
+            songs.push("songs/welcometothejungle/teaser.mp3");
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
+
+          function playi() {
+            songs.push("songs/incredible/teaser.mp3");
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
+
+          function playey() {
+            songs.push("songs/emeraldeyes/teaser.mp3");
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
+
+          function playmln() {
+            songs.push("songs/moonlightnight/teaser.mp3");
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
+
+          function playclt() {
+            songs.push("songs/crookedlittletrees/teaser.mp3");
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
+
+          function playmot() {
+            songs.push("songs/madeoftears/teaser.mp3");
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
+
+          function playml() {
+            songs.push("songs/molotovlove/teaser.mp3")
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
+
+          function playsi() {
+            songs.push("songs/sleepingissues/teaser.mp3")
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
+
+          function playnp() {
+            songs.push("songs/neonpink/teaser.mp3")
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
+
+          function playQueue() {
+            if(songs.length > 0){
+              audio = new Audio(songs[0]);
+              audio.play();
+              songs.shift();
+              audio.addEventListener("ended", playQueue); 
+            }
+            else {
+              action = false;
+            }
+          }
+
+     </script>
+
+    <!--Filler----------------------------------------------------------->
+
+    <section id="filler">
+    </section>
+
+  <!-------------lyrics--------------------------------------------------------->
+
+      <section id="Songs">
+      <ul>
+
+        <li id="song_01">
+          <h3>Moonlight Night</h3>
+          <hr>
+          <p> 
+                      [...] <br>
+             Oh, let us get emotional tonight <br>
+        Let us believe, let us cry, let us try again <br>
+                The irrational high price <br>
+         For a moonlight night, a moonlight night <br>
+                      [...] <br>
+            <br>
+            Ein kleiner Text in dem ein paar Worte über den Song <br>
+            und seine entstehung geäußert werden, damit die Seite <br>
+            nicht ganz so leer ist.
+          </p>
+          <img src="Img/pagebreak.png" alt="pageBreak.png">
+        </li>
+
+        <li id="song_02">
+          <h3>Welcome to the Jungle</h3>
+          <hr>
+          <p> 
+                      [...] <br>
+            Welcome to the circus <br>
+            Welcome to your new home <br>
+            They got everything you needed <br>
+            but you didn't even know <br>
+                      [...] <br>
+            <br>
+            Welcome to the Jungle is a metaphor for growing up into our perverted society. 
+            The song is about breaking the patterns of a perverted/sick reality, breaking out of one’s cage and letting the “animal” out, so everyone can see what they are really dealing with. 
+            It's a song about one’s true nature, about emancipation, <br> 
+            about showing what is deep down inside of us. <br>
+            <br>
+            It's about our deepest - and in this case - darkest desires.
+          </p>
+          <img src="Img/pagebreak.png" alt="pageBreak.png">
+        </li>
+
+        <li id="song_03">
+          <h3>Molotove Love</h3>
+          <hr>
+          <p> 
+                      [...] <br>
+          My love is like a Molotov cocktail on ice <br>
+          If it breaks out you should run and hide <br>
+          But If you wanna play with fire then you gotta come to me <br>
+          And If it's that what you desire I'm the match and you're the gasoline <br>
+                      [...] <br>
+            <br>
+            Ein kleiner Text in dem ein paar Worte über den Song <br>
+            und seine entstehung geäußert werden, damit die Seite <br>
+            nicht ganz so leer ist.
+            <br>
+            It's about our deepest - and in this case - darkest desires.
+          </p>
+          <img src="Img/pagebreak.png" alt="pageBreak.png">
+        </li>
+
+        <li id="song_04">
+          <h3>Emerald Eyes</h3>
+          <hr>
+          <p> 
+                              [...] <br>
+                      Let me melt your armor <br>
+                          Made of blue ice <br>
+              Just give another look with your emerald eyes <br>
+                          Imma be your amor <br>
+                      Will you be my valentine? <br>
+            Please, give me another look with your two emerald eyes <br>
+                              [...] <br>
+            <br>
+            Ein kleiner Text in dem ein paar Worte über den Song <br>
+            und seine entstehung geäußert werden, damit die Seite <br>
+            nicht ganz so leer ist.
+          </p>
+          <img src="Img/pagebreak.png" alt="pageBreak.png">
+        </li>
+
+        <li id="song_05">
+          <h3>Incredible</h3>
+          <hr>
+          <p> 
+                      [...] <br>
+            You're makin' me feel big <br>
+            Oh, mountains tall <br>
+            You're makin' me feel special <br>
+                      [...] <br>
+            <br>
+            Ein kleiner Text in dem ein paar Worte über den Song <br>
+            und seine entstehung geäußert werden, damit die Seite <br>
+            nicht ganz so leer ist.
+          </p>
+          <img src="Img/pagebreak.png" alt="pageBreak.png">
+        </li>
+
+        <li id="song_06">
+          <h3>Neon Pink</h3>
+          <hr>
+          <p> 
+            [...] <br>
+            And when I wear my rose coloured glasses <br>
+            I'm seeing rose coloured ashes <br>
+            Of the burned down house <br>
+            Of our past time vows <br>
+            I'm burning in red hot passion <br>
+            I haven't learned my lesson <br>
+            When you play with fire <br>
+            Don't you bring the gasoline <br>
+            [...] <br>
+            <br>
+            Ein kleiner Text in dem ein paar Worte über den Song <br>
+            und seine entstehung geäußert werden, damit die Seite <br>
+            nicht ganz so leer ist.
+          </p>
+          <img src="Img/pagebreak.png" alt="pageBreak.png">
+        </li>
+
+        <li id="song_07">
+          <h3>Sleeping Issues</h3>
+          <hr>
+          <p> 
+                      [...] <br>
+        I have the right to crave your touch <br>
+        I have the right to miss you sleeping next to me <br>
+        Even though sleeping next to me means I can sleep <br>
+                      [...] <br>
+            <br>
+            Ein kleiner Text in dem ein paar Worte über den Song <br>
+            und seine entstehung geäußert werden, damit die Seite <br>
+            nicht ganz so leer ist.
+          </p>
+          <img src="Img/pagebreak.png" alt="pageBreak.png">
+        </li>
+
+        <li id="song_08">
+          <h3>Made of Tears</h3>
+          <h5>- Blue at the Dreamers Ball -</h5>
+          <hr>
+          <p> 
+                      [...] <br>
+          You greet my love and my power fades <br>
+              My deeds were all betrayed <br>
+               Finding out the guilt<br>
+                   Is it vain?  <br>
+                      [...] <br>
+            <br>
+          </p>
+          <h5 id="textMot">
+            Made of Tears” is like a cry. A cry for our strongest desires: love, trust, and everlasting loyalty. <br>
+            This song describes not only a process, or the story of a romantic journey. It’s a chest keeping my emotions, my wishes, and desires inside. This chest was mostly shaped by the last few months, which dug me a seemingly bottomless pit, that I can’t escape, held back by the love I have lost. The song is drenched in dreary melancholy, my loyal companion constantly staying at my side while I’m drowning in past times. <br> 
+            This song is like following the metaphorical invitation described in Queen’s “Dreamers Ball”: <br>
+            “If I can’t have you when I’m waking; I go to sleep and dream I’m with you” <br>
+            But this ball is like a prison where I’m waiting to be rescued. Waiting for true love to come for me, to heal my wounds and help me through the sinister night. <br>
+            It’s a cry of all the souls, doomed by love to sink into the depths of solence, hoping that the last light in the dark won’t die. <br>
+            <br>
+            We loved this Queen classic, but after everything that happened, I can’t stand listening to this song anymore. I never wanted us to end up dancing at the ball and I’m sorry that it had to end that way. <br>
+            <br>
+            Farewell, my dear Aries. Thank you for giving me the feeling of being loved by someone <br>
+            -M 
+          </h5>
+          <img src="Img/pagebreak.png" alt="pageBreak.png" id="pagebreak">
+        </li>
+
+        <li id="song_09">
+          <h3>Crooked little Trees</h3>
+          <hr>
+          <p> 
+                      [...] <br>
+         It's a pretty vicious, superstition <br>  
+       Cause no one is as perfect as he looks <br>
+         Cause we're all just crooked little trees <br>
+                      [...] <br>
+            <br>
+            Ein kleiner Text in dem ein paar Worte über den Song <br>
+            und seine entstehung geäußert werden, damit die Seite <br>
+            nicht ganz so leer ist.
+          </p>
+          <a href="#contact"> 
+            <h4 class="pfeil">▼</h4>
+          </a>
+        </li>
+
+        </ul>
+      </section>
+
+  <!--Filler----------------------------------------------------------->
+
+  <section id="filler">
+  </section>
+
+  <!--Contact----------------------------------------------------->
+
+  <section id="contact">
+    <h3>Contact</h3>
+    <hr>
+    <br>
+    <p>
+      Interested? <br> 
+      Send us an E-Mail at <a href="mailto:theastrayofficial@gmx.de">theastrayofficial@gmx.de</a> or an Instagram Direct-Message at <a href="https://instagram.com/theastrayofficial" target="blank">theastrayofficial</a> and we'll notify you once the Album is available for purchase!
+    </p>
+    <img src="Img/pagebreak.png" alt="pageBreak.png">
+  </section>
+
+    <!--Footer----------------------------------------------------->
+
+      <footer> 
+        <p>
+          <h5> life is fuck!</h5>
+       </p>
+      </footer>
+    </div>
+  </body>
+</html>
