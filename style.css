@@ -377,7 +377,7 @@ header nav ul li:hover {
 
 #Songs ul li {
   padding-top: 10%;
-  scroll-snap-align: center;
+  scroll-snap-align: none;
   padding-bottom: 10%;
 }
 
